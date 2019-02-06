@@ -10,7 +10,7 @@ namespace CrispyCrawler
     {
         static void Main(string[] args)
         {
-            string link = "https://en.wikipedia.org/wiki/The_Wolf_of_Wall_Street_(2013_film)";
+            string link = "https://en.wikipedia.org/wiki/2000_in_film";
             WikipediaParser wiki = new WikipediaParser();
             List<string> links = new List<string>();
             links.Add(link);
