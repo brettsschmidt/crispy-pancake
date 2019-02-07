@@ -8,7 +8,7 @@ namespace Sloppy_Bacon
 {
     class SloppyRNN
     {
-
+        
 
     }
 }

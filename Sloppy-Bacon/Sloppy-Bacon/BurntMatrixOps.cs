@@ -8,6 +8,37 @@ namespace Sloppy_Bacon
 {
     public class BurntMatrixOps
     {
+        public static float[,] PointAdd(float[,] firstMat, float[,] secMat)
+        {
+            var newMat = new float[firstMat.GetLength(0), firstMat.Rank];
+            if (firstMat.GetLength(0) == secMat.GetLength(0) && secMat.Rank == firstMat.Rank)
+            {
+                for (int i = 0; i < newMat.GetLength(0); i++)
+                {
+                    for (int o = 0; o < newMat.Rank; o++)
+                    {
+                        newMat[i, o] = firstMat[i, o] + secMat[i, o];
+                    }
+                }
+            }
+            return newMat;
+        }
+
+        public static float[,] PointMult(float[,] firstMat, float[,] secMat)
+        {
+            var newMat = new float[firstMat.GetLength(0), firstMat.Rank];
+            if(firstMat.GetLength(0) == secMat.GetLength(0) && secMat.Rank == firstMat.Rank)
+            {
+                for(int i = 0; i < newMat.GetLength(0); i++)
+                {
+                    for (int o = 0; o < newMat.Rank; o++)
+                    {
+                        newMat[i, o] = firstMat[i, o] * secMat[i, o];
+                    }
+                }
+            }
+            return newMat;
+        }
 
         public static float DotProduct(float[] firstMat, float[] secMat)
         {
