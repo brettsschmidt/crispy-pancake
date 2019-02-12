@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Liberated_Lox
 {
-    public class Class1
+    class LSTMFunctions
     {
     }
 }
