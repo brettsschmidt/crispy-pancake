@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoamingOJ", "FoamingOJ\FoamingOJ.csproj", "{B9345508-69FB-4877-AEEE-B09B7CAF5C8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9345508-69FB-4877-AEEE-B09B7CAF5C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9345508-69FB-4877-AEEE-B09B7CAF5C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9345508-69FB-4877-AEEE-B09B7CAF5C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9345508-69FB-4877-AEEE-B09B7CAF5C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F223A5D-1D1D-42FA-895C-8606CD029136}
+	EndGlobalSection
+EndGlobal
