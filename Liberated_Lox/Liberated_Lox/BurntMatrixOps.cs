@@ -33,15 +33,26 @@ namespace Liberated_Lox
         }
         public static float[][] MatProd(float[][] a, float[][] b)
         {
-            int aRows = a.Length; int aCols = a[0].Length;
-            int bRows = b.Length; int bCols = b[0].Length;
+            int aRows = a.Length;
+            int aCols = a[0].Length;
+            int bRows = b.Length;
+            int bCols = b[0].Length;
             if (aCols != bRows)
-                throw new Exception("xxx");
+                throw new Exception("ACol != BRows");
             float[][] result = MatCreate(aRows, bCols);
-            for (int i = 0; i < aRows; ++i) // each row of a
-                for (int j = 0; j < bCols; ++j) // each col of b
-                    for (int k = 0; k < aCols; ++k) // could use k < bRows
+
+            Parallel.For(0, aRows, i =>
+            {
+                for(int j = 0; j < bCols; j++)
+                {
+                    for(int k = 0; k < aCols; k++)
+                    {
                         result[i][j] += a[i][k] * b[k][j];
+                    }
+                }
+            }
+            );
+
             return result;
         }
 
