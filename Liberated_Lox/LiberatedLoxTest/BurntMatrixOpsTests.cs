@@ -60,13 +60,94 @@ namespace LiberatedLoxTest
             return bmat;
         }
 
-        
+        //TODO: Test the rest of the methods
 
         [TestMethod]
-        public void BasicMatixTests()
+        public void MatCreateTest()
         {
-            //Matrixes are backwards?
             
+            
+
+
+        }
+
+        [TestMethod]
+        public void MatFromArrayTest()
+        {
+
+
+
+
+        }
+
+        [TestMethod]
+        public void MatCopyTest()
+        {
+
+
+
+
+        }
+
+        [TestMethod]
+        public void MatTanhTest()
+        {
+
+
+
+
+        }
+
+        [TestMethod]
+        public void TanhTest()
+        {
+
+
+
+
+        }
+
+        [TestMethod]
+        public void MatHadaTest()
+        {
+
+
+
+
+        }
+
+        [TestMethod]
+        public void MatSigTest()
+        {
+
+
+
+
+        }
+
+        [TestMethod]
+        public void SigmoidTest()
+        {
+
+
+
+
+        }
+
+        [TestMethod]
+        public void MatSumTest()
+        {
+
+
+
+
+        }
+
+        [TestMethod]
+        public void ComputeOutputsTest()
+        {
+
+
 
 
         }
