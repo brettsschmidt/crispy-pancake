@@ -16,7 +16,7 @@ namespace FoamingOJ
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Snatch());
+            Application.Run(new SimulationScreen());
         }
     }
 }
