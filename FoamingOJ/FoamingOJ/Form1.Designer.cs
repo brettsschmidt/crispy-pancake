@@ -31,13 +31,13 @@
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.StoryBox = new System.Windows.Forms.TextBox();
+            this.OptionOne_BTN = new System.Windows.Forms.Button();
+            this.OptionTwo_BTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,42 +71,16 @@
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "&Options";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(683, 27);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(466, 389);
-            this.textBox1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(329, 453);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(277, 89);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(624, 453);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(277, 89);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.newToolStripMenuItem.Text = "&New";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             // 
             // skinToolStripMenuItem
@@ -121,19 +95,48 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
+            // StoryBox
+            // 
+            this.StoryBox.Location = new System.Drawing.Point(683, 27);
+            this.StoryBox.Multiline = true;
+            this.StoryBox.Name = "StoryBox";
+            this.StoryBox.Size = new System.Drawing.Size(466, 389);
+            this.StoryBox.TabIndex = 2;
+            this.StoryBox.TextChanged += new System.EventHandler(this.StoryBox_TextChanged);
+            // 
+            // OptionOne_BTN
+            // 
+            this.OptionOne_BTN.Location = new System.Drawing.Point(329, 453);
+            this.OptionOne_BTN.Name = "OptionOne_BTN";
+            this.OptionOne_BTN.Size = new System.Drawing.Size(277, 89);
+            this.OptionOne_BTN.TabIndex = 3;
+            this.OptionOne_BTN.Text = "Option One";
+            this.OptionOne_BTN.UseVisualStyleBackColor = true;
+            this.OptionOne_BTN.Click += new System.EventHandler(this.OptionOne_BTN_Click);
+            // 
+            // OptionTwo_BTN
+            // 
+            this.OptionTwo_BTN.Location = new System.Drawing.Point(624, 453);
+            this.OptionTwo_BTN.Name = "OptionTwo_BTN";
+            this.OptionTwo_BTN.Size = new System.Drawing.Size(277, 89);
+            this.OptionTwo_BTN.TabIndex = 4;
+            this.OptionTwo_BTN.Text = "Option Two";
+            this.OptionTwo_BTN.UseVisualStyleBackColor = true;
+            this.OptionTwo_BTN.Click += new System.EventHandler(this.OptionTwo_BTN_Click);
+            // 
             // Snatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1161, 580);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.OptionTwo_BTN);
+            this.Controls.Add(this.OptionOne_BTN);
+            this.Controls.Add(this.StoryBox);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Snatch";
-            this.Text = "Form1";
+            this.Text = "Option One";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -147,9 +150,9 @@
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox StoryBox;
+        private System.Windows.Forms.Button OptionOne_BTN;
+        private System.Windows.Forms.Button OptionTwo_BTN;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem skinToolStripMenuItem;
