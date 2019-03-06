@@ -41,9 +41,11 @@
             this.rainbowCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.codeRedWhoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TextBox = new System.Windows.Forms.TextBox();
+            this.SimulationText_TXT = new System.Windows.Forms.TextBox();
             this.OptionOne = new System.Windows.Forms.Button();
             this.OptionTwo = new System.Windows.Forms.Button();
+            this.OptionTwoText_txt = new System.Windows.Forms.TextBox();
+            this.OptionOneText_txt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +55,7 @@
             this.picture.BackColor = System.Drawing.Color.LightGray;
             this.picture.Location = new System.Drawing.Point(12, 27);
             this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(665, 389);
+            this.picture.Size = new System.Drawing.Size(567, 302);
             this.picture.TabIndex = 0;
             this.picture.TabStop = false;
             // 
@@ -153,34 +155,54 @@
             this.helpToolStripMenuItem.Text = "&Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
-            // TextBox
+            // SimulationText_TXT
             // 
-            this.TextBox.BackColor = System.Drawing.Color.LightGray;
-            this.TextBox.Location = new System.Drawing.Point(683, 27);
-            this.TextBox.Multiline = true;
-            this.TextBox.Name = "TextBox";
-            this.TextBox.Size = new System.Drawing.Size(466, 389);
-            this.TextBox.TabIndex = 2;
+            this.SimulationText_TXT.BackColor = System.Drawing.Color.LightGray;
+            this.SimulationText_TXT.Location = new System.Drawing.Point(585, 27);
+            this.SimulationText_TXT.Multiline = true;
+            this.SimulationText_TXT.Name = "SimulationText_TXT";
+            this.SimulationText_TXT.Size = new System.Drawing.Size(564, 302);
+            this.SimulationText_TXT.TabIndex = 2;
             // 
             // OptionOne
             // 
             this.OptionOne.BackColor = System.Drawing.Color.LightGray;
-            this.OptionOne.Location = new System.Drawing.Point(12, 453);
+            this.OptionOne.Location = new System.Drawing.Point(12, 335);
             this.OptionOne.Name = "OptionOne";
             this.OptionOne.Size = new System.Drawing.Size(567, 89);
             this.OptionOne.TabIndex = 3;
             this.OptionOne.Text = "Option One";
             this.OptionOne.UseVisualStyleBackColor = false;
+            this.OptionOne.Click += new System.EventHandler(this.OptionOne_Click);
             // 
             // OptionTwo
             // 
             this.OptionTwo.BackColor = System.Drawing.Color.LightGray;
-            this.OptionTwo.Location = new System.Drawing.Point(582, 453);
+            this.OptionTwo.Location = new System.Drawing.Point(585, 335);
             this.OptionTwo.Name = "OptionTwo";
             this.OptionTwo.Size = new System.Drawing.Size(567, 89);
             this.OptionTwo.TabIndex = 4;
             this.OptionTwo.Text = "Option Two";
             this.OptionTwo.UseVisualStyleBackColor = false;
+            this.OptionTwo.Click += new System.EventHandler(this.OptionTwo_Click);
+            // 
+            // OptionTwoText_txt
+            // 
+            this.OptionTwoText_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.OptionTwoText_txt.Location = new System.Drawing.Point(590, 434);
+            this.OptionTwoText_txt.Multiline = true;
+            this.OptionTwoText_txt.Name = "OptionTwoText_txt";
+            this.OptionTwoText_txt.Size = new System.Drawing.Size(562, 125);
+            this.OptionTwoText_txt.TabIndex = 6;
+            // 
+            // OptionOneText_txt
+            // 
+            this.OptionOneText_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.OptionOneText_txt.Location = new System.Drawing.Point(17, 434);
+            this.OptionOneText_txt.Multiline = true;
+            this.OptionOneText_txt.Name = "OptionOneText_txt";
+            this.OptionOneText_txt.Size = new System.Drawing.Size(562, 125);
+            this.OptionOneText_txt.TabIndex = 7;
             // 
             // SimulationScreen
             // 
@@ -188,9 +210,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1161, 580);
+            this.Controls.Add(this.OptionOneText_txt);
+            this.Controls.Add(this.OptionTwoText_txt);
             this.Controls.Add(this.OptionTwo);
             this.Controls.Add(this.OptionOne);
-            this.Controls.Add(this.TextBox);
+            this.Controls.Add(this.SimulationText_TXT);
             this.Controls.Add(this.picture);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -209,7 +233,7 @@
         private System.Windows.Forms.PictureBox picture;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.TextBox TextBox;
+        private System.Windows.Forms.TextBox SimulationText_TXT;
         private System.Windows.Forms.Button OptionOne;
         private System.Windows.Forms.Button OptionTwo;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
@@ -222,6 +246,8 @@
         private System.Windows.Forms.ToolStripMenuItem peasInTheDarkToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rainbowCardToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem codeRedWhoreToolStripMenuItem;
+        private System.Windows.Forms.TextBox OptionTwoText_txt;
+        private System.Windows.Forms.TextBox OptionOneText_txt;
     }
 }
 
