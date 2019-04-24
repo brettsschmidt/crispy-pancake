@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "LSTMKeras", "LSTMKeras\LSTMKeras.pyproj", "{C7640808-BEB8-4C81-947E-95ACFD0EC5F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7640808-BEB8-4C81-947E-95ACFD0EC5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7640808-BEB8-4C81-947E-95ACFD0EC5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5EEC1E0-600C-4C14-BE0B-913906B8366D}
+	EndGlobalSection
+EndGlobal
