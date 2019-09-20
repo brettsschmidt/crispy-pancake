@@ -1,2 +1,2 @@
 # crispy-pancake
-Crispy-pancake and soggy-hashbrown AIs
+Source code for An Exploration of Text Generation project
